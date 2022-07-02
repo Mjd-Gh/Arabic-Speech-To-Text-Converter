@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Speech to text</title>
+</head>
+<style>
+    body{
+        display: flex;
+        margin: 0%;
+        align-items: center;
+        margin-right: 150px;
+        min-height: 100vh;
+    }
+    #start_rec{
+        width: 200px;
+        height: 70px;
+        text-align: center;
+        font-size: larger;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    #rec_text{
+        width: 200%;
+        height: 250px;
+        resize: none;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <div class="speech_to_text">
+        <button id="start_rec" onclick="record()">Convert Speech</button>
+        <textarea  id="rec_text"></textarea>
+    </div>
+</body>
+</html>
